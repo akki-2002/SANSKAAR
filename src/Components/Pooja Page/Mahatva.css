@@ -1,0 +1,97 @@
+.mahatva-container {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  max-height: 70vh; /* Limit height for responsiveness */
+  overflow-y: auto; /* Enables scrolling for overflowing content */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+  /* margin: 0 auto; */
+  /* width: 100%;
+  max-width: 800px;  */
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+/* Close Button Styling */
+.mahatva-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: #ff6600;
+  border: none;
+  font-size: 1.5rem; /* Make the "X" larger */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.mahatva-close-btn:hover {
+  transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+/* Heading Styles */
+.mahatva-container h2 {
+  font-size: 1.8rem;
+  color: #ff6600;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Paragraph Styles */
+.mahatva-container p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Scrollbar Styles */
+.mahatva-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.mahatva-container::-webkit-scrollbar-thumb {
+  /* background-color: #ccc; */
+  border-radius: 10px;
+}
+
+.mahatva-container::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mahatva-container {
+    padding: 15px;
+    max-width: 95%;
+  }
+
+  .mahatva-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .mahatva-container p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mahatva-container {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .mahatva-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .mahatva-container p {
+    font-size: 0.85rem;
+  }
+
+  .mahatva-close-btn {
+    font-size: 1.3rem;
+  }
+}

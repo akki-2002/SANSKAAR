@@ -1,0 +1,142 @@
+/* Pooja Grid Styles */
+.pooja-grid-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 100px;
+    max-width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.text-content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px; /* Less padding for modern look */
+}
+
+.text-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000; /* Bold black title */
+    margin-bottom: 20px;
+}
+
+.text-content h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.text-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.navigation-arrows {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px; /* Space below text */
+}
+
+.arrow-btn {
+    background-color: #eaeaea;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.arrow-btn:hover {
+    background-color: #6a00ff;
+    color: white;
+}
+
+.image-content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    max-height: 450px; /* Set a fixed size for the image */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .pooja-grid-container {
+        padding: 40px 60px;
+    }
+
+    .text-content h2 {
+        font-size: 2rem;
+    }
+
+    .text-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .text-content p {
+        font-size: 1rem;
+    }
+
+    .image-content img {
+        width: 85%;
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    .arrow-btn {
+        padding: 10px 15px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .pooja-grid-container {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .text-content, .image-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-content {
+        padding: 0;
+    }
+
+    .image-content {
+        padding: 0;
+    }
+
+    .image-content img {
+        width: 80%;
+        max-width: 350px;
+        max-height: 350px;
+        margin-bottom: 20px;
+    }
+
+    .arrow-btn {
+        margin: 0 10px;
+    }
+}

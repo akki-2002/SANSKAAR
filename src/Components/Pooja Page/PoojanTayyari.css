@@ -1,0 +1,115 @@
+.poojan-tayyari-container {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  max-height: 75vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* margin: 20px auto;
+  width: 90%;
+  max-width: 800px; */
+  position: relative; /* For the close button positioning */
+}
+
+/* Header section with close button */
+.poojan-tayyari-container {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 20px; */
+}
+
+.poojan-tayyari-container h2 {
+  font-size: 1.8rem;
+  color: #000000;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+.poojan-close-icon {
+  font-size: 1.5rem;
+  color: #ff0000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.poojan-close-icon:hover {
+  color: #b30000;
+}
+
+/* List styling */
+.poojan-tayyari-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.poojan-tayyari-container li {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+/* Scrollbar styling */
+.poojan-tayyari-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.poojan-tayyari-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.poojan-tayyari-container::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 8px 12px;
+  background-color: transparent;
+  color: #ff6600;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .poojan-tayyari-container {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .poojan-tayyari-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .poojan-tayyari-container li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .poojan-tayyari-container {
+    padding: 10px;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .poojan-tayyari-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .poojan-tayyari-container li {
+    font-size: 0.9rem;
+  }
+}

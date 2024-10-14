@@ -1,0 +1,106 @@
+/* Card Container */
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  margin-bottom: 40px;
+}
+
+/* Individual Cards */
+.card {
+  background-color: #007bff;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); /* Lifting effect */
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+/* Modal */
+.modal-content {
+  background-color: white;
+  padding: 0px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Modern shadow effect */
+  width: 100%;
+  text-align: center;
+}
+
+/* Button */
+.button1 {
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button1:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .card-container {
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    gap: 15px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 200px;
+  }
+
+  .button1 {
+    width: 85%;
+    font-size: 1rem;
+  }
+}

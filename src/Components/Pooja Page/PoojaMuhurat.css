@@ -1,0 +1,116 @@
+.muhurat-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  max-height: 75vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  /* margin: 0 auto; */
+  /* width: 100%;
+  max-width: 860px; */
+  transition: all 0.3s ease-in-out;
+  transform: scale(0.95);
+  opacity: 0;
+  animation: fadeInModal 0.4s forwards;
+}
+
+/* Smooth Modal Animation */
+@keyframes fadeInModal {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.muhurat-container h2 {
+  font-size: 1.8rem;
+  color: #ff6600;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.muhurat-container p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+/* Smooth Scrollbar Styles */
+.muhurat-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.muhurat-container::-webkit-scrollbar-thumb {
+  background-color: #ff6600;
+  border-radius: 12px;
+}
+
+.muhurat-container::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+/* Close Button with Hover Effect */
+.muhurat-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 8px 12px;
+  background-color: transparent;
+  color: #ff6600;
+  border: none;
+  /* border-radius: 50%; */
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* .muhurat-close-btn:hover {
+  background-color: #ff6600;
+  color: white;
+  transform: scale(1.1);
+} */
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .muhurat-container {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .muhurat-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .muhurat-container p {
+    font-size: 0.95rem;
+  }
+
+  .muhurat-close-btn {
+    font-size: 1.2rem;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .muhurat-container {
+    padding: 12px;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .muhurat-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .muhurat-container p {
+    font-size: 0.85rem;
+  }
+
+  .muhurat-close-btn {
+    font-size: 1.1rem;
+  }
+}

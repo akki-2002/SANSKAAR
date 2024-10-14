@@ -1,0 +1,104 @@
+.poojan-tayyari-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    max-height: 75vh;
+    overflow-y: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .poojan-tayyari-container h2 {
+    font-size: 1.8rem;
+    color: #ff6600;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .poojan-tayyari-container ul {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    padding-left: 20px;
+  }
+  
+  .poojan-tayyari-container ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Close Button */
+  .modal-close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 8px 12px;
+    background-color: transparent;
+    color: #ff6600;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .modal-close-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Scrollbar Styles */
+  .poojan-tayyari-container::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .poojan-tayyari-container::-webkit-scrollbar-thumb {
+    background-color: #ff6600;
+    border-radius: 12px;
+  }
+  
+  .poojan-tayyari-container::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+  }
+  
+  /* Media Queries for smaller screens */
+  @media (max-width: 768px) {
+    .poojan-tayyari-container {
+      padding: 15px;
+      width: 95%;
+    }
+  
+    .poojan-tayyari-container h2 {
+      font-size: 1.6rem;
+    }
+  
+    .poojan-tayyari-container ul {
+      font-size: 0.95rem;
+    }
+  
+    .modal-close-btn {
+      font-size: 1.2rem;
+      padding: 6px 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .poojan-tayyari-container {
+      padding: 12px;
+      width: 100%;
+      border-radius: 0;
+    }
+  
+    .poojan-tayyari-container h2 {
+      font-size: 1.4rem;
+    }
+  
+    .poojan-tayyari-container ul {
+      font-size: 0.85rem;
+    }
+  
+    .modal-close-btn {
+      font-size: 1.1rem;
+    }
+  }
+  

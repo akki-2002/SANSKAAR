@@ -1,0 +1,186 @@
+.samagri-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  max-height: 75vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  /* margin: 20px auto;
+  width: 90%;
+  max-width: 1200px; */
+  transition: all 0.3s ease-in-out;
+  transform: scale(0.95);
+  opacity: 0;
+  animation: fadeInModal 0.4s forwards;
+}
+
+/* Smooth Modal Animation */
+@keyframes fadeInModal {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.samagri-container h2 {
+  font-size: 1.8rem;
+  color: #ff6600;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.samagri-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.samagri-item {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.samagri-item:hover {
+  transform: translateY(-5px);
+}
+
+.samagri-item h3 {
+  font-size: 1.2rem;
+  color: #8b0000;
+  margin-bottom: 10px;
+}
+
+.samagri-item p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.samagri-item span {
+  font-weight: bold;
+  color: #333;
+}
+
+.buy-btn {
+  padding: 7px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+}
+
+.buy-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Close Button Styling */
+.samagri-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 8px 12px;
+  background-color: transparent;
+  color: #ff6600;
+  border: none;
+  /* border-radius: 50%; */
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* .samagri-close-btn:hover {
+  background-color: #ff6600;
+  color: white;
+  transform: scale(1.1);
+} */
+
+/* Scrollbar Styling */
+.samagri-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.samagri-container::-webkit-scrollbar-thumb {
+  /* background-color: #; */
+  border-radius: 12px;
+}
+
+.samagri-container::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .samagri-container {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .samagri-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .samagri-grid {
+    gap: 15px;
+  }
+
+  .samagri-item h3 {
+    font-size: 1rem;
+  }
+
+  .samagri-item p {
+    font-size: 0.85rem;
+  }
+
+  .buy-btn {
+    font-size: 0.85rem;
+  }
+
+  .samagri-close-btn {
+    font-size: 1.2rem;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .samagri-container {
+    padding: 10px;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .samagri-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .samagri-grid {
+    gap: 10px;
+  }
+
+  .samagri-item h3 {
+    font-size: 0.9rem;
+  }
+
+  .samagri-item p {
+    font-size: 0.75rem;
+  }
+
+  .buy-btn {
+    font-size: 0.75rem;
+  }
+
+  .samagri-close-btn {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,275 @@
+/* Container Styling */
+.pooja-prarambh-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* padding: 20px; */
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+
+  /* padding: 20px; */
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  /* max-height: 75vh; */
+  overflow-y: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+}
+
+.pooja-prarambh-container h2{
+
+    font-size: 1.8rem;
+    color: #ff6600;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+  }
+
+/* Video Banner */
+.video-banner {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-video {
+  width: 100%;
+  max-height: 500px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Content Details Section */
+.content-details {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pooja-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #d35400;
+  text-align: center;
+}
+
+.pooja-date {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* Button Section */
+.button-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.icon-link {
+  font-size: 1.5rem;
+  color: #d35400;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.icon-link:hover {
+  color: #e67e22;
+}
+
+/* Audio Controls */
+.audio-controls {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+audio {
+  width: 100%;
+  max-width: 600px;
+  outline: none;
+  border-radius: 8px;
+}
+
+/* PDF Viewer */
+.pdf-viewer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pdf-viewer iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Pooja Steps Section */
+.pooja-steps {
+  margin-top: 30px;
+}
+
+.pooja-step-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+  color: #d35400;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid #d35400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pooja-step-title:hover {
+  background-color: #fdf1e2;
+  color: #e67e22;
+}
+
+/* Toggle Arrow */
+.toggle-arrow {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+/* Mantra Section */
+.mantra-section {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+/* Mantra and GIF on one line */
+.mantra-gif-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.mantra-text {
+  font-size: 1rem;
+  color: #2c3e50;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.pooja-gif {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Button Group in One Line */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button-group button {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.play-audio-button {
+  background-color: #922c2c;
+  color: #fff;
+}
+
+.play-audio-button.playing-audio-button {
+  background-color: #c0392b;
+}
+
+.details-button {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.details-button:hover {
+  background-color: #2980b9;
+}
+
+.next-mantra-button {
+  background-color: #f39c12;
+  color: #fff;
+}
+
+.next-mantra-button:hover {
+  background-color: #e67e22;
+}
+
+/* Mantra Details Pop-up */
+.mantra-details-popup {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #f4f4f4;
+  color: red;
+  border-radius: 8px;
+  border: 1px solid #d35400;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .mantra-gif-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mantra-gif-container img {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .icon-link {
+    font-size: 1.2rem;
+  }
+
+  .pooja-title {
+    font-size: 1rem;
+  }
+
+  .pooja-date {
+    font-size: 0.9rem;
+  }
+
+  .pooja-step-title{
+    font-size: 1rem;
+  }
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6366F1;
+  border-radius: 8px;
+}
+
+
